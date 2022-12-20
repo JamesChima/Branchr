@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Gilroy';
+    src:url('../buildit/font/gilroy/Gilroy-Black.ttf') format('truetype');
+    src:url('../buildit/font/gilroy/Gilroy-Bold.ttf') format('truetype');
+    src:url('../buildit/font/gilroy/Gilroy-Heavy.ttf') format('truetype');
+    src:url('../buildit/font/gilroy/Gilroy-Light.ttf') format('truetype');
+    src:url('../buildit/font/gilroy/Gilroy-Regular.ttf') format('truetype');
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: 'Gilroy', sans-serif;
+}
+
+
+/* Styling fot navigation................................ */
+#nav-background {
+    height: 113px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+}
+
+.btn-size {
+    width: 164px;
+    height: 51px;
+    border-radius: 5.73px;
+}  
+
+.btn-colour {
+    background-color: #1D48B7 !important;
+}
+
+.btn-colour a, .btn-colour a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn-colour-login {
+    background-color: #FFFFFF;
+    border: 1px solid #1D48B7 !important;
+}
+
+.btn-colour-login a, .btn-colour-login a:hover {
+    text-decoration: none;
+    color: #1D48B7;
+}
+
+.btn-colour:hover, .nav-link:hover  {
+    opacity: 0.7;
+}
+
+.nav-link {
+    color: #474747;
+    font-size: 14px !important;
+}
+
+/* hero............................................ */
+.hero-heading h1 {
+    font-size: 55px;
+    line-height: 5rem;
+    font-weight: bolder;
+    color: #2D2D2D;
+}
+
+.hero-heading p {
+    font-size: 24px;
+    font-weight: 100;
+    color: #474747;
+}
+
+.hero-content {
+    display: flex;
+}
+
+.pattern-image {
+    background-image: url(assets/pattern-2.png);
+    height: 282px;
+    width: 200%;
+    background-size: cover;
+}
+
+.blue-bg {
+    background-color: #1D48B7;
+    width: 100%;
+    border-top-right-radius: 7%;
+    border-bottom-right-radius: 7%;
+}
+
+.blue-1, .blue-2 {
+    color: #1D48B7;
+}
+
+.blue-1 img {
+    position: absolute;
+    top: 140px;
+    left: 540px;
+}
+
+.blue-2 img {
+    position: absolute;
+    top: 220px;
+    left: 300px;
+}
+
+/* Product details section.............................. */
+.product-details {
+    background-color: #F8F8F8;
+    height: 1128px;
+}
+
+.product-items {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "A A A A    A A B B   B B B B"
+                         "A A A A    A A B B   B B B B"
+                         "C C C C    C C D D   D D D D"
+                         "C C C C    C C D D   D D D D";
+}
+
+.item-A {
+    grid-area: A;
+}
+
+.item-B {
+    grid-area: B;
+}
+
+.item-C {
+    grid-area: C;
+}
+
+.item-D {
+    grid-area: D;
+}
+
+.item-B img, .item-C {
+    width: 400px;
+}
+
+.product-items p {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 10rem;
+}
+
+.line {
+    background-color: #1D48B7;
+    width: 200px;
+    color: #1D48B7;
+}
+
+/* Why branchr section.................................... */
+.heading-pg {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 4rem;
+}
+
+.card-container {
+    margin-top: 2rem;
+}
+
+.card-1, .card-2 {
+    width: 300px;
+    min-height: 204px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-left: 20px;
+}
+
+.card-1 {
+    background-color: #1D48B7;
+}
+
+.card-1 p, .card-2 p {
+    color: #FFFFFF;
+    margin-top: 4.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-2 {
+    background-color: #2D2D2D;
+}
+
+/* Mobile styling........................... */
+
+
+@media only screen and (max-width: 768px) {
+    .btn-size {
+        width: 105px;
+        height: 39px;
+    } 
+
+    .hero-heading h1 {
+        font-size: 40px;
+    }
+
+    .hero-heading p {
+        font-size: 18px;
+    }
+
+    .product-items {
+        display: grid;
+        gap: 30px;
+        grid-template-areas: "A A A A    A A A A   A A A A"
+                             "B B B B    B B B B   B B B B"
+                             "C C C C    C C C C   C C C C"
+                             "D D D D    D D D D   D D D D";
+    }
+
+    .product-items p {
+        font-size: 32px;
+        padding-top: 5rem;
+    }
+
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1023px) {
+    .navbar-menu-items {
+        display: none;
+    }
+
+}
+
+
+

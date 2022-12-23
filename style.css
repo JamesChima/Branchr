@@ -138,6 +138,7 @@ body {
 
 .item-D {
     grid-area: D;
+    margin-top: 8rem;
 }
 
 .item-B img, .item-C {
@@ -147,6 +148,9 @@ body {
 .product-items p {
     font-size: 40px;
     font-weight: bold;
+}
+
+.item-A p {
     padding-top: 10rem;
 }
 

@@ -1,0 +1,402 @@
+@font-face {
+    font-family: 'Gilroy';
+    src:url('../buildit/font/gilroy/Gilroy-Black.ttf') format('truetype');
+    src:url('../buildit/font/gilroy/Gilroy-Bold.ttf') format('truetype');
+    src:url('../buildit/font/gilroy/Gilroy-Heavy.ttf') format('truetype');
+    src:url('../buildit/font/gilroy/Gilroy-Light.ttf') format('truetype');
+    src:url('../buildit/font/gilroy/Gilroy-Regular.ttf') format('truetype');
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: 'Gilroy', sans-serif;
+}
+
+
+/* Styling fot navigation................................ */
+.nav-background {
+    height: 113px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+}
+
+.btn-size {
+    width: 164px;
+    height: 51px;
+    border-radius: 5.73px;
+}  
+
+.btn-colour {
+    background-color: #1D48B7 !important;
+}
+
+.btn-colour a, .btn-colour a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn-colour-login {
+    background-color: #FFFFFF !important;
+    border: 1px solid #1D48B7 !important;
+}
+
+.btn-colour-login a, .btn-colour-login a:hover {
+    text-decoration: none;
+    color: #1D48B7;
+}
+
+.btn-colour:hover, .nav-link:hover, .btn-colour-login:hover  {
+    opacity: 0.7;
+}
+
+.nav-link {
+    color: #474747;
+    font-size: 14px !important;
+}
+
+/* hero............................................ */
+.hero-heading h1 {
+    font-size: 55px;
+    line-height: 5rem;
+    font-weight: bolder;
+    color: #2D2D2D;
+}
+
+.hero-heading p {
+    font-size: 24px;
+    font-weight: 100;
+    color: #474747;
+}
+
+.hero-content {
+    display: flex;
+}
+
+.pattern-image {
+    background-image: url(assets/pattern-2.png);
+    height: 282px;
+    width: 200%;
+    background-size: cover;
+}
+
+.blue-bg {
+    background-color: #1D48B7;
+    width: 100%;
+    border-top-right-radius: 7%;
+    border-bottom-right-radius: 7%;
+}
+
+.blue-1, .blue-2 {
+    color: #1D48B7;
+}
+
+.blue-1 img {
+    position: absolute;
+    top: 140px;
+    left: 540px;
+}
+
+.blue-2 img {
+    position: absolute;
+    top: 220px;
+    left: 300px;
+}
+
+/* Product details section.............................. */
+.product-details {
+    background-color: #F8F8F8;
+    height: 1000px;
+}
+
+.product-items {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "A A A A    B B B B"
+                         "A A A A    B B B B"
+                         "C C C C    D D D D"
+                         "C C C C    D D D D";
+}
+
+.item-A {
+    grid-area: A;
+}
+
+.item-B {
+    grid-area: B;
+}
+
+.item-C {
+    grid-area: C;
+}
+
+.item-D {
+    grid-area: D;
+}
+
+.item-B img, .item-C {
+    width: 400px;
+}
+
+.product-items p {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 10rem;
+}
+
+.line {
+    background-color: #1D48B7;
+    width: 200px;
+    color: #1D48B7;
+}
+
+/* Why branchr section/card styling.................................... */
+.heading-pg {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 4rem;
+}
+
+.card-section {
+    margin-top: 2rem;
+}
+
+.row {
+    margin-left: 0 !important;
+    
+}
+
+.row>* {
+    padding-left: 0 !important;
+}
+
+.card-1, .card-2, .card-3 {
+    width: 350px;
+    min-height: 204px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-1, .card-3 {
+    background-color: #1D48B7 !important;
+    border: none !important;
+}
+
+.card-1 p, .card-2 p, .card-3 p {
+    color: #FFFFFF;
+    margin-top: 3.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-2 {
+    background-color:#2D2D2D !important;
+}
+
+.card-2, .card-3  {
+    margin-left: 1.5rem;
+}
+
+/* to get started section..........................*/
+.get-started{
+    background-color: #F8F8F8;
+    padding-bottom: 2rem;
+}
+
+.first-childs {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 2.5rem;
+}
+
+.margin {
+    margin-left: 6rem;
+}
+
+.num {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.num span {
+    font-size: 100px;
+    color: #1D48B7;
+    font-weight: bold;
+}
+
+.num i {
+    margin-top: 18%;
+    font-size: 20px;
+    color: #1D48B7;
+}
+
+.footer {
+    font-size: 14px;
+    color: #2D2D2D;
+    font-weight: 700;
+}
+
+/* branchr get started styling.................................. */
+.branchr-get-started {
+    background-color: #1D48B7;
+    height: 384px;
+    margin-top: 2rem;
+    border-radius: 20px;
+    background-image: url(assets/pattern-2.png);
+    background-size: cover;
+}
+
+.branchr-get-started p {
+    font-size: 50px;
+    padding-top: 8rem;
+}
+
+.cta-btn {
+    width: 189px;
+    height: 62px;
+    margin-top: 1.5rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* footer............................... */
+.footer-container {
+    margin-top: 3rem;
+    height: 296px;
+    background-color: #2D2D2D;
+}
+
+.footer-contents {
+    padding-top: 8rem;
+}
+
+.footer-contents p:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.footer-contents p:nth-child(2) {
+    font-size: 12px;
+}
+
+
+/* Mobile styling........................... */
+@media only screen and (max-width: 768px) {
+    .branchr-logo img {
+        width: 79px;
+    }
+
+    .btn-size {
+        width: 80px;
+        height: 39px;
+    }
+
+    .hero-heading h1 {
+        font-size: 40px;
+        line-height: 3.3rem;
+    }
+
+    .hero-heading p {
+        font-size: 18px;
+    }
+
+    .product-details {
+        padding-top: 3rem;
+        min-height: 1270px;
+    }
+
+    .product-items {
+        display: grid;
+        gap: 1px;
+        grid-template-areas: "A A A A    A A A A"
+                             "B B B B    B B B B"
+                             "D D D D    D D D D"
+                             "C C C C    C C C C";
+    }
+
+    .product-items p {
+        font-size: 32px;
+        padding-top: 0rem;
+        margin-bottom: 0.5rem !important;
+        line-height: 35px;
+    }
+
+    .card-1, .card-2, .card-3 {
+        width: 300px;
+    }
+
+    .blue-2 img {
+        position: absolute;
+        top: 180px;
+        left: -20px;
+    }
+
+    .pattern-image {
+        background-image: url(assets/pattern-2.png);
+        height: 282px;
+        width: 75%;
+        background-size: cover;
+    
+    }
+
+    .item-B img, .item-C {
+        width: 100%;
+    }
+
+    .item-D {
+        grid-area: D;
+        margin-top: 5rem;
+    }
+
+    .heading-pg {
+        font-size: 32px;
+        margin-top: 4rem;
+        margin-bottom: 0.3rem !important;
+    }
+
+    .card-1, .card-2, .card-3 {
+        width: 300px !important;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-2, .card-3  {
+        margin-left: 0rem;
+    }
+
+    .nav-background, .hero, .product-details, .why-branchr, .card-section, .get-started, .branchr-get-started, .footer-container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+     }
+
+}
+
+@media only screen and (max-width: 426px) {
+    .num i {
+        display: none;
+    }
+
+    .num {
+        display: block !important;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1023px) {
+    .navbar-menu-items {
+        display: none;
+    }
+
+}
+
+
+

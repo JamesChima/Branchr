@@ -181,7 +181,7 @@ body {
 }
 
 .card-1, .card-2, .card-3 {
-    width: 350px;
+    /* width: 350px; */
     min-height: 204px;
     border-radius: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15) !important;
@@ -381,17 +381,44 @@ body {
         padding-right: 1rem !important;
      }
 
+    .branchr-get-started {
+        width: 90% !important;
+    }
+
+    .branchr-get-started p {
+        font-size: 40px;
+        padding-top: 5rem;
+    }
+
 }
 
 @media only screen and (max-width: 426px) {
+    .get-started p{
+        text-align: center;
+    }
+
+    .num {
+        display: flex;
+        justify-content: center  
+    }
+
     .num i {
         display: none;
     }
 
-    .num {
-        display: block !important;
+    .footer p, .footer a {
         text-align: center;
     }
+
+    .margin {
+        margin-left: 0rem;
+    }
+    
+
+    /* .num {
+        display: block !important;
+        text-align: center;
+    } */
     
 }
 

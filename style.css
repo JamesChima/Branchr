@@ -97,7 +97,7 @@ body {
     border-bottom-right-radius: 7%;
 }
 
-.blue-1, .blue-2 {
+.highlighted, .highlighted-2 {
     color: #1D48B7;
 }
 
@@ -110,6 +110,7 @@ body {
     background-position: center;
     background-size: cover;
     padding: 28px;
+    
 }
 
 .highlighted-2 {

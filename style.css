@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Gilroy';
-    src:url('../buildit/font/gilroy/Gilroy-Black.ttf') format('truetype');
-    src:url('../buildit/font/gilroy/Gilroy-Bold.ttf') format('truetype');
-    src:url('../buildit/font/gilroy/Gilroy-Heavy.ttf') format('truetype');
-    src:url('../buildit/font/gilroy/Gilroy-Light.ttf') format('truetype');
-    src:url('../buildit/font/gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-family: 'Avant';
+    src:url('/font/ITC\ Avant\ Garde\ Gothic\ Std\ Book.otf') format('opentype');
+    src:url('/font/ITC\ Avant\ Garde\ Gothic\ Std\ Demi.otf') format('opentype');
+    src:url('/font/ITC\ Avant\ Garde\ Gothic\ Std\ Demi\ Condensed\ Oblique.otf') format('opentype');
+    src:url('/font/ITC\ Avant\ Garde\ Gothic\ Std\ Demi\ Oblique.otf') format('opentype');
+    src:url('/font/ITC\ Avant\ Garde\ Gothic\ Std\ Medium\ Oblique.otf') format('opentype');
 }
 
 html, body {
@@ -17,7 +17,7 @@ html {
 
 body {
     position: relative;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'ITC Avant Garde Gothic Std', sans-serif !important;
 }
 
 
@@ -61,22 +61,22 @@ body {
 
 .nav-link {
     color: #474747;
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-weight: 450 !important;
 }
 
 /* hero............................................ */
 .hero-heading h1 {
-    font-size: 55px;
-    line-height: 5rem;
-    font-weight: bolder;
+    font-size: 48px;
+    line-height: 4rem;
+    font-weight: 800;
     color: #2D2D2D;
 }
 
 .hero-heading p {
-    font-size: 24px;
-    font-weight: 100;
+    font-size: 20px;
     color: #474747;
+    margin-bottom: 6rem;
 }
 
 .hero-content {
@@ -102,41 +102,42 @@ body {
 }
 
 .highlighted {
-    /* position: absolute;
-    top: 140px;
-    left: 540px; */
     background-image: url(/assets/circle-1.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 28px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 5px;
+    padding-left: 5px;
+
     
 }
 
 .highlighted-2 {
-    /* position: absolute;
-    top: 220px;
-    left: 300px; */
     background-image: url(/assets/circle-2.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;;
 }
 
 /* Product details section.............................. */
 .product-details {
     background-color: #F8F8F8;
-    height: 1000px;
+    height: 1050px;
 }
 
 .product-items {
     display: grid;
-    gap: 30px;
+    gap: 60px;
     grid-template-areas: "A A A A    B B B B"
                          "A A A A    B B B B"
-                         "C C C C    D D D D"
-                         "C C C C    D D D D";
+                         "C C C D    D D D D"
+                         "C C C D    D D D D";
 }
 
 .item-A {

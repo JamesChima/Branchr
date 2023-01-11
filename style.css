@@ -71,6 +71,7 @@ body {
     line-height: 4rem;
     font-weight: 800;
     color: #2D2D2D;
+    margin-top: 4rem;
 }
 
 .hero-heading p {
@@ -327,6 +328,7 @@ body {
 
     .hero-heading p {
         font-size: 18px;
+        margin-bottom: 3rem;
     }
 
     .product-details {
@@ -431,10 +433,15 @@ body {
     }
 }
 
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+    .product-details {
+        min-height: 1420px  !important;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
     .product-details {
-        padding-top: 3rem;
-        min-height: 1950px;
+        min-height: 1950px !important;
     }
 
     .card-2, .card-3  {

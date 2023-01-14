@@ -218,6 +218,13 @@ body {
     height: 60px;
 }
 
+.icons-middle {
+    margin-top: 3rem;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
 .card-flip {
     background-color: transparent;
     width: 420px !important;
@@ -258,9 +265,9 @@ body {
     color: #FFFFFF;
 }
 
-.card-flip-front {
+/* .card-flip-front {
     displa
-}
+} */
 
 .card-flip-middle-front {
     background-color: #2D2D2D !important;
@@ -462,6 +469,10 @@ body {
     .branchr-get-started p {
         font-size: 40px;
         padding-top: 5rem;
+    }
+
+    .card-flip-back p, .card-flip-middle-back p {
+        margin-top: 2rem;
     }
 
 }

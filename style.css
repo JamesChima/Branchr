@@ -70,8 +70,8 @@ body {
 
 /* hero............................................ */
 .hero-heading h1 {
-    font-size: 50px;
-    line-height: 4rem;
+    font-size: 70px;
+    line-height: 6rem;
     font-weight: 800;
     color: #2D2D2D;
     margin-top: 4rem;
@@ -124,7 +124,7 @@ body {
     background-size: cover;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 15px;
+    padding-right: 30px;
     padding-left: 23px;;
 }
 
@@ -374,7 +374,6 @@ body {
 .footer-contents p:nth-child(2) {
     font-size: 12px;
 }
-
 
 /* Mobile styling........................... */
 @media only screen and (max-width: 991px) {

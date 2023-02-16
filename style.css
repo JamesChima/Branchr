@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-
-/* @font-face {
-    font-family: 'Avant';
-    src:url('/font/ITC\ Avant\ Garde\ Gothic\ Std\ Book.otf') format('opentype');
-    src:url('/font/ITC\ Avant\ Garde\ Gothic\ Std\ Demi.otf') format('opentype');
-    src:url('/font/ITC\ Avant\ Garde\ Gothic\ Std\ Demi\ Condensed\ Oblique.otf') format('opentype');
-    src:url('/font/ITC\ Avant\ Garde\ Gothic\ Std\ Demi\ Oblique.otf') format('opentype');
-    src:url('/font/ITC\ Avant\ Garde\ Gothic\ Std\ Medium\ Oblique.otf') format('opentype');
-} */
-
 html, body {
     overflow-x: hidden;
 }
@@ -112,9 +102,12 @@ body {
     background-position: center;
     background-size: cover;
     padding-top: 28px;
-    padding-bottom: 28px;
-    padding-right: 15px;
-    padding-left: 23px;   
+    padding-bottom: 28px;   
+}
+
+.design::after{
+    content: "\a";
+    white-space: pre;
 }
 
 .highlighted-2 {
@@ -124,8 +117,6 @@ body {
     background-size: cover;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 30px;
-    padding-left: 23px;;
 }
 
 /* Product details section.............................. */
